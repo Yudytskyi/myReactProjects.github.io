@@ -1,0 +1,44 @@
+@import '../common/commonStyles';
+
+.month {
+  flex: 1;
+  min-width: 300px;
+  min-height: $minWidth;
+  display: flex;
+  padding: 60px 10px;
+  @include flexCenter();
+
+  &__title {
+    margin: 0 0 $indentSize;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: $titleTextColor;
+  }
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(7, $cellSize);
+  grid-template-rows: repeat(6, $cellSize);
+  color: $dateTextColor;
+
+  &__title {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 315px;
+    font-size: 1.3em;
+    color: $textActiveColor;
+  }
+
+  & > div {
+    @include flexCenter();
+    box-sizing: border-box;
+    border-radius: 50%;
+
+    transition: color 0.25s ease-in-out, border 0.25s ease-in-out;
+    &:hover {
+      color: $otherTextColor;
+    }
+  }
+}

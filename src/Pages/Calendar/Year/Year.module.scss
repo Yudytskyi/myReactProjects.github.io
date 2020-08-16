@@ -1,0 +1,12 @@
+@import '../common/commonStyles';
+
+.year {
+  display: flex;
+  flex-wrap: wrap;
+}
+.quarter {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 2px solid $accentBorderColor;
+}

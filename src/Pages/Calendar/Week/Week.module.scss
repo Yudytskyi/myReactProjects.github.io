@@ -1,0 +1,49 @@
+@import '../common/commonStyles';
+
+.week {
+  @include flexCenter(column, space-between);
+  text-align: center;
+  flex: 1;
+  min-width: 300px;
+  min-height: $minWidth;
+  padding: 60px 20px;
+  background-color: $accentBgColor;
+
+  &__title {
+    margin: 0 0 $indentSize;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: $white;
+  }
+}
+
+.content {
+  @include flexCenter(column, space-between);
+  width: 70%;
+  height: 100%;
+  color: $dateTextColor;
+
+  &__item {
+    justify-content: space-between;
+    margin: 10px;
+    padding: 5px 25px;
+    background-color: $white;
+    border-radius: 15px;
+  }
+
+  & > p {
+    @include flexCenter(row);
+    width: 80%;
+    height: 30px;
+    margin: 0;
+    border: 3px solid;
+    border-radius: 15px;
+    background-color: $white;
+    font-size: 1.3em;
+    text-transform: capitalize;
+    transition: color 0.25s ease-in-out, border 0.25s ease-in-out;
+    &:hover {
+      color: $otherTextColor;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+@import '../../common/commonStyles';
+
+.homePage {
+  @include flexCenter(column, space-around);
+  background-color: cadetblue;
+  min-width: 100vw;
+  min-height: 100vh;
+  color: white;
+  font-weight: 900;
+  &__link {
+    width: 300px;
+    height: 180px;
+  }
+}
+.calendar {
+  background: url('./img/Calendar.png') no-repeat center/contain;
+}
+.slider {
+  background: url('./img/Slider.png') no-repeat center/contain;
+}

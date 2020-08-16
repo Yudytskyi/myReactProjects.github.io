@@ -1,0 +1,35 @@
+@import '../common/commonStyles';
+
+.calendarDate {
+  flex: 1;
+  min-width: 300px;
+  min-height: $minWidth;
+  padding: 60px 20px;
+
+  @include flexCenter(column, space-between);
+  background-color: $accentBgColor;
+
+  color: $white;
+  font-weight: 300;
+
+  & * {
+    margin: 0;
+  }
+
+  &__title {
+    font-size: 1.6rem;
+    font-weight: normal;
+  }
+  &__subtitle {
+    padding: 0 20px 30px;
+    font-size: 1rem;
+    line-height: 100%;
+    text-transform: capitalize;
+  }
+
+  &__content {
+    overflow: hidden;
+    font-size: 15rem;
+    line-height: 0.75em;
+  }
+}

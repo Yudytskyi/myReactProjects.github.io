@@ -1,0 +1,13 @@
+@import './common/commonStyles';
+
+.contentContainer {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  border: 10px solid $accentBorderColor;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: $dateTextColor;
+}

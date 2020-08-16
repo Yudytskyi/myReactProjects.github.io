@@ -1,0 +1,18 @@
+.returnLink {
+  position: absolute;
+  z-index: 10000;
+  top: 0;
+  left: 50%;
+  opacity: 0.25;
+  font-size: 30px;
+  color: white;
+  text-shadow: 1px 1px black;
+  text-decoration: none;
+  transform: translate(-50%, -25%);
+  transition: transform 0.25s ease, opacity 0.25s ease;
+
+  &:hover {
+    transform: translate(-50%, -10%);
+    opacity: 1;
+  }
+}
